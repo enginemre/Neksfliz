@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
+android {
+    namespace ProjectConstants.projectName
+    compileSdk  ProjectConstants.compilerSDK
+
+    defaultConfig {
+        minSdk  ProjectConstants.minSDK
+        targetSdk  ProjectConstants.targetSDK
+        versionCode  ProjectConstants.versionCode
+        versionName  ProjectConstants.versionName
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary  true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled  true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        coreLibraryDesugaringEnabled  true
+        sourceCompatibility  JavaVersion.VERSION_17
+        targetCompatibility  JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    kotlin {
+        jvmToolchain(17)
+    }
+}
+
+dependencies {
+    implementation libs.hilt
+    kapt libs.hilt.compiler
+}
