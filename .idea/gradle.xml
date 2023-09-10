@@ -16,11 +16,15 @@
             <option value="$PROJECT_DIR$/common-ui" />
             <option value="$PROJECT_DIR$/features" />
             <option value="$PROJECT_DIR$/features/downloads" />
+            <option value="$PROJECT_DIR$/features/downloads/api" />
+            <option value="$PROJECT_DIR$/features/downloads/ui" />
             <option value="$PROJECT_DIR$/features/home" />
             <option value="$PROJECT_DIR$/features/home/api" />
             <option value="$PROJECT_DIR$/features/home/data" />
             <option value="$PROJECT_DIR$/features/home/ui" />
             <option value="$PROJECT_DIR$/features/new-and-popular" />
+            <option value="$PROJECT_DIR$/features/new-and-popular/api" />
+            <option value="$PROJECT_DIR$/features/new-and-popular/ui" />
             <option value="$PROJECT_DIR$/navigation" />
           </set>
         </option>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">Ana Sayfa</string>
+    <string name="downloads">İndirilenler</string>
+    <string name="new_and_popular">Yeni ve Popüler</string>
+</resources>

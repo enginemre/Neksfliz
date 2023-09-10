@@ -56,9 +56,16 @@ android {
 
 dependencies {
 
+    implementation(project(":common-ui"))
+    implementation(project(":common"))
+    implementation(project(":common-data"))
     implementation(project(":navigation"))
     implementation(project(":features:home:api"))
     implementation(project(":features:home:ui"))
+    implementation(project(":features:new-and-popular:api"))
+    implementation(project(":features:new-and-popular:ui"))
+    implementation(project(":features:downloads:api"))
+    implementation(project(":features:downloads:ui"))
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
