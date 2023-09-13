@@ -14,7 +14,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.engin.neksfliz.home.api.HomeApi
-import com.engin.neksfliz.ui.theme.NeksflizBlack10
+import com.engin.neksfliz.common_ui.theme.NeksflizBlack10
 
 @Composable
 fun BottomBar(

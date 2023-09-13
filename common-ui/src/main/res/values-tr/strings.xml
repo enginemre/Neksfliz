@@ -3,4 +3,6 @@
     <string name="home">Ana Sayfa</string>
     <string name="downloads">İndirilenler</string>
     <string name="new_and_popular">Yeni ve Popüler</string>
+    <string name="review">İncele</string>
+    <string name="my_list">Listem</string>
 </resources>

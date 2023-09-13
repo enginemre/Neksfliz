@@ -2,8 +2,8 @@ package com.engin.neksfliz.navigation
 
 
 
-import com.engin.neksfliz.R
 import com.engin.neksfliz.common.Routes
+import com.engin.neksfliz.common_ui.R
 
 sealed class BottomTabs {
 

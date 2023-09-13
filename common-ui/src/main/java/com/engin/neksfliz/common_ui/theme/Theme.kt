@@ -1,4 +1,4 @@
-package com.engin.neksfliz.ui.theme
+package com.engin.neksfliz.common_ui.theme
 
 import android.app.Activity
 import androidx.compose.foundation.ExperimentalFoundationApi

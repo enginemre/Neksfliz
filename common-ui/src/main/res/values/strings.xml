@@ -3,4 +3,6 @@
     <string name="home">Home</string>
     <string name="downloads">Downloads</string>
     <string name="new_and_popular">New and Popular</string>
+    <string name="review">Review</string>
+    <string name="my_list">My List</string>
 </resources>

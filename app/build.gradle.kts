@@ -7,10 +7,10 @@ plugins {
 }
 
 android {
-    namespace = ProjectConstants.projectName
     compileSdk = ProjectConstants.compilerSDK
 
     defaultConfig {
+        applicationId = ProjectConstants.projectName
         minSdk = ProjectConstants.minSDK
         targetSdk = ProjectConstants.targetSDK
         versionCode = ProjectConstants.versionCode
@@ -47,7 +47,7 @@ android {
     kotlin {
         jvmToolchain(17)
     }
-    packaging {
+    packagingOptions {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
@@ -61,6 +61,7 @@ dependencies {
     implementation(project(":common-data"))
     implementation(project(":navigation"))
     implementation(project(":features:home:api"))
+    implementation(project(":features:home:data"))
     implementation(project(":features:home:ui"))
     implementation(project(":features:new-and-popular:api"))
     implementation(project(":features:new-and-popular:ui"))

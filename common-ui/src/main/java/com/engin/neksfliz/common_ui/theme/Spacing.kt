@@ -1,4 +1,4 @@
-package com.engin.neksfliz.ui.theme
+package com.engin.neksfliz.common_ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
