@@ -9,4 +9,5 @@ dependencies {
     "implementation"(project(":common-ui"))
     "implementation"(project(":features:home:api"))
     "implementation"(project(":navigation"))
+    "implementation"(libs.glide)
 }
