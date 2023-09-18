@@ -3,7 +3,9 @@
 package com.engin.neksfliz.home.ui.component
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -25,7 +27,9 @@ fun MediumMovieItem(
     onClick: () -> Unit
 ) {
     Card(
-        modifier = Modifier.size(125.dp, 200.dp),
+        modifier = Modifier.aspectRatio(1f / 2f)
+            .heightIn(min = 300.dp, max = 400.dp)
+            .widthIn(min = 200.dp, max = 250.dp),
         shape = RoundedCornerShape(2.dp),
         onClick = onClick
     ) {
@@ -43,7 +47,9 @@ fun MediumMovieItem(
 fun MediumMovieItemPrev() {
     NeksflizTheme {
         Card(
-            modifier = Modifier.size(125.dp, 200.dp),
+            modifier = Modifier.aspectRatio(1f / 2f)
+                .heightIn(min = 300.dp, max = 400.dp)
+                .widthIn(min = 200.dp, max = 250.dp),
             shape = RoundedCornerShape(2.dp),
             onClick = { /*TODO*/ }) {
             Image(

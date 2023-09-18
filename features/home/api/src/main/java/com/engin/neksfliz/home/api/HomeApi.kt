@@ -10,8 +10,8 @@ interface HomeApi : FeatureApi{
     fun registerGraph(
         navController: NavController,
         navGraphBuilder: NavGraphBuilder,
-        initialPadding : Dp
-    )
+        initialPadding : Dp,
+        )
     companion object{
         const val Home= "/home"
         const val HomeRoot = "/"

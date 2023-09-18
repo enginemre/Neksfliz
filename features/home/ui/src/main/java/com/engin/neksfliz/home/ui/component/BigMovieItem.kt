@@ -1,8 +1,7 @@
-@file:OptIn(ExperimentalMaterial3Api::class)
+@file:OptIn(ExperimentalMaterial3Api::class, ExperimentalGlideComposeApi::class)
 
 package com.engin.neksfliz.home.ui.component
 
-import android.graphics.Bitmap
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -21,24 +20,26 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
+import com.bumptech.glide.integration.compose.GlideImage
+import com.engin.neksfliz.common_ui.R
 import com.engin.neksfliz.common_ui.component.SmallButton
 import com.engin.neksfliz.common_ui.theme.NeksflizTheme
 import com.engin.neksfliz.common_ui.theme.spacing
-import com.engin.neksfliz.common_ui.R
 
 @Composable
 fun BigMovieItem(
-    bitmap: Bitmap,
+    modifier: Modifier,
+   imageUrl : String,
     onClick: () -> Unit
 ) {
     Card(
-        modifier = Modifier
+        modifier = modifier
             .height(500.dp)
             .fillMaxWidth(),
         onClick = onClick,
@@ -48,10 +49,10 @@ fun BigMovieItem(
         )
     ) {
         Box(Modifier.fillMaxSize()) {
-            Image(
+            GlideImage(
+                model = imageUrl,
                 modifier = Modifier.fillMaxSize(),
                 contentScale = ContentScale.FillBounds,
-                bitmap = bitmap.asImageBitmap(),
                 contentDescription = null
             )
             Box(

@@ -2,6 +2,7 @@ package com.engin.neksfliz.navigation
 
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
+import com.engin.neksfliz.common_ui.model.AppBarState
 
 interface FeatureApi {
 
@@ -9,6 +10,7 @@ interface FeatureApi {
 
     fun registerGraph(
         navController: NavController,
-        navGraphBuilder: NavGraphBuilder
+        navGraphBuilder: NavGraphBuilder,
+        onAppBarComposing : (AppBarState) -> Unit
     )
 }
