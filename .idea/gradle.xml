@@ -24,6 +24,7 @@
             <option value="$PROJECT_DIR$/features/home/ui" />
             <option value="$PROJECT_DIR$/features/new-and-popular" />
             <option value="$PROJECT_DIR$/features/new-and-popular/api" />
+            <option value="$PROJECT_DIR$/features/new-and-popular/domain" />
             <option value="$PROJECT_DIR$/features/new-and-popular/ui" />
             <option value="$PROJECT_DIR$/navigation" />
           </set>

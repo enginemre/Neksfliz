@@ -7,5 +7,7 @@ dependencies {
     "implementation"(project(":common"))
     "implementation"(project(":common-ui"))
     "implementation"(project(":features:new-and-popular:api"))
+    "implementation"(project(":features:new-and-popular:domain"))
     "implementation"(project(":navigation"))
+    "implementation"(libs.glide)
 }
